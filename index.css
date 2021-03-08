@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.all-section{
+    display: flex;
+    
+   }
+/* Sidebar start */
+
+   .first-section{
+    background-color: #F6F2E6;
+    width: 270px;
+    min-height: 100vh;
+    padding: 30px;
+    box-sizing: border-box;
+    position: fixed;
+    
+}
+.second-section{
+    background-color: #163631;
+    width:calc(100% - 270px - 25%);
+    min-height: 100vh;
+    margin-left: 270px;
+    
+
+}
+.third-section{
+    background-color: #FFFCF9;
+    width: 25%;
+    min-height: 100vh;
+    padding: 50px;
+    box-sizing: border-box;
+}
+.dot-icon{
+    display: flex;
+    justify-content: space-between;
+}
+#dot1{
+    font-size:50px;
+    cursor: pointer;
+    margin-top: -48px;
+    margin-left: -30px;
+}
+#dot2{
+    width: 20px;
+    height: 15px;
+    margin-top:-30px;
+    cursor: pointer;
+}
+.inbox{
+    display: flex;
+    flex-direction: column;
+}
+.inbox div{
+    padding: 10px;
+}
+.hot-icons i{
+margin-right: 10px;
+}
+.heading{
+    margin-left: 130px;
+    color: whitesmoke;
+}
+/* checkbox */
+.custom{
+    margin-top:20px;
+}
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 4px;
+    cursor: pointer;
+    font-size: 18px;
+  
+  }
+  
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #183153;
+  }
+  
+  
+  .container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+ 
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 3px;
+    height: 6px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+/* checkbox end */
+
+.button-red{
+    padding: 18px 25px;
+    margin-top: 30px;
+    background-color: #FF4E48;
+    border-radius: 0 10px 10px 10px;
+    border: none;
+    color: white;
+}
+
+/* sidebar end */
+
+/* meeting schedule start */
+
+.button-third{
+    padding: 0 22px;
+    background-color: #E6A389;
+    border: none;
+    border-radius: 8px;
+    margin-left: 10px;
+}
+.meeting-icon{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.button-third p{
+    color: white;
+}
+.meeting-icon i{
+    margin-right: 30px;
+    
+}
+.first-mentors{
+    width: 280px;
+    height: 150px;
+    padding: 0px 10px;
+    background-color: #FFF1D6;
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+
+.time{
+    display: flex;
+    justify-content: space-between;
+}
+.time p{
+    font-size: 12px;
+}
+.avtars img{
+    width:35px;
+    height: 35px;
+    border-radius: 50%;
+    margin: 5px;
+}
+.first-mentors:nth-child(4n+1){
+    background-color: #FFF1D6;
+}
+.first-mentors:nth-child(4n+2){
+    background-color: #D1E5FE;
+}
+.first-mentors:nth-child(4n+3){
+    background-color: #FFD8D9;
+}
+.first-mentors:nth-child(4n+4){
+    background-color: #D8FFE2;
+}
+.btn-avtar{
+    padding: 10px 15px;
+    margin-left: 20px;
+    background-color: #F0F7FF;
+    border: none;
+    border-radius: 15px;
+}
+.centre-btn{
+    display: flex;
+    align-items: center;
+}
+.center-btn{
+    display: flex;
+    align-items: center;
+}
+
+
+/* meeting schedule end */
+
+/* Second section start */
+.task-wrapper{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    border-bottom: 1px solid #708F8A;
+    
+}
+
+.task-tab{
+    color: #708F8A;
+    padding: 50px 0px;
+    width: 25%;
+    text-align: center;
+}
+.task-tab:first-child{
+    padding-left: 48px;
+}
+.task-tab:last-child{
+    padding-right: 48px;
+}
+
+.task-tab.active{
+    color: tomato;
+    border-bottom: 5px solid tomato;
+}
+
+
+/* second section end */
